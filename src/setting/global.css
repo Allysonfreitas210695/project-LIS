@@ -1,3 +1,22 @@
+:root{
+    --color-primary: #2B4CB8;
+    --color-primary-dark: #0C3197;
+    --color-primary-ligth: #2F80ED;
+
+    --color-secondary: #D81B60;
+    --color-secondary-dark: #A00037;
+    --color-secondary-ligth: #FF5C8D;
+
+    --color-white: #FFFFFF;
+    --color-grey: #828282;
+    
+    --font-big: 26px;
+    --font-average: 16px;
+    --font-small: 14px;
+
+    font-size: 62.5%;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -10,5 +29,6 @@ html, body, #root{
 }
 
 body{
-  background-color: #ffffff;  
+  background-color: var(--color-white);  
 }
+
