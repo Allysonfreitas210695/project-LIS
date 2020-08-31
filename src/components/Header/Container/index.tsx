@@ -9,9 +9,7 @@ background-color: var( --color-primary);
 export default function Header(){
     return(
        <HeaderMain>
-
          <TopBar/>
-
        </HeaderMain>
     );
 }
