@@ -4,10 +4,10 @@ import Logo from "../Logo";
 import MenuIcon from '../Menu';
 
 const TopBarContainerStyled = styled.div`
-    display:flex;
-    align-items:center;
+    display: flex;
+    align-items: center;
     background-color: var(--color-primary-dark);
-    heigth:4rem;
+    heigth: 4rem;
 `
 
 export default function TopBarContainer(){
