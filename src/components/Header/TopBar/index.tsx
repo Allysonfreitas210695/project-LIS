@@ -7,7 +7,7 @@ const TopBarContainerStyled = styled.div`
     display: flex;
     align-items: center;
     background-color: var(--color-primary-dark);
-    heigth: 4rem;
+    height: 6rem;
 `
 
 export default function TopBarContainer(){
