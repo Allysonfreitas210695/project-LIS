@@ -8,7 +8,8 @@ const ListMenu = styled.ul`
     li{
         color: var(--color-grey);
         margin-bottom: 1rem;
-        font-size: 1.2rem;
+        margin-right: 4rem;
+        font-size: 1.4rem;
         font-family: 'Roboto', sans-serif;
     }
 
