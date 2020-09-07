@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-const MessageContainer = styled.div`
+export const MessageContainer = styled.div`
   width: 70%;
   color: var(--color-white);
   font-family: 'Roboto', sans-serif;
@@ -10,10 +10,22 @@ const MessageContainer = styled.div`
   margin-top: 10px;
   margin-bottom: 10px;
   line-height: 1.4;
+
+  @media(min-width: 768px){
+      width: 500px;
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+      margin-left: 50px;
+  }
 `
 
 const Title = styled.h1`
   font-size: 2.4rem;
+
+  @media(min-width: 768px){
+      font-size: 2.6rem;
+  }
 `
 
 const Description = styled.h2`
@@ -24,12 +36,16 @@ const Description = styled.h2`
 const Button = styled(Link)`
     display: flex;
     border: 1px solid var(--color-grey);
-    height: 4rem;
+    height: 6rem;
     justify-content: center;
     align-items: center;
     color: var(--color-white);
     text-decoration: none;
     border-radius: 0.8rem;
+
+    @media(min-width: 768px){
+        width: 200px;
+    }
 `  
 
 export default function Messegen(){
@@ -39,7 +55,7 @@ export default function Messegen(){
              somos apaixonado por invocao e fazemos disso nosso trabalho
          </Title>
          <Description>
-             Sabemos que o trabalho em grupo é inevitavel, para qualquer time!
+             Sabemos que o trabalho em grupo é algo essencial para qualquer time, e conosco nao seria diferente!
          </Description>
          <Button to="/projetos">
              Projetos
