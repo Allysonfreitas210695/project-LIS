@@ -18,7 +18,6 @@ const ListMenu = styled.ul`
         margin: 0;
 
         li{
-            margin-left: 1rem;
             margin-bottom: 0;
             color: var(--color-white);
         }

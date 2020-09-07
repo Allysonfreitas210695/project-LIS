@@ -34,7 +34,7 @@ const MenuHeaderNavigtion = styled.nav`
     transition: transform 2s;
 
     @media(min-width: 768px){
-        transform: none;
+          transform: none;
           background-color: transparent;
           display: flex;
           position: static;

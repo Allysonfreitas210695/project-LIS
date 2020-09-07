@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import {BsBook} from 'react-icons/bs';
+import './style.css'
 
 export const MessageContainer = styled.div`
   width: 70%;
@@ -35,6 +37,7 @@ const Description = styled.h2`
 
 const Button = styled(Link)`
     display: flex;
+    font-size: 1.2rem;
     border: 1px solid var(--color-grey);
     height: 6rem;
     justify-content: center;
@@ -45,6 +48,7 @@ const Button = styled(Link)`
 
     @media(min-width: 768px){
         width: 200px;
+        font-size: 1.6rem;
     }
 `  
 
@@ -58,7 +62,7 @@ export default function Messegen(){
              Sabemos que o trabalho em grupo é algo essencial para qualquer time, e conosco nao seria diferente!
          </Description>
          <Button to="/projetos">
-             Projetos
+           <BsBook className="afasta"/> Projetos
          </Button>
      </MessageContainer>
     );
