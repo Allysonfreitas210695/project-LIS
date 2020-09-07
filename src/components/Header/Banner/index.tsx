@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Img from '../../../assets/images/Home/imagem.svg';
 import BannerImg from '../BannerImg';
 import Messegen, {MessageContainer} from '../BannerMessege';
 
@@ -26,14 +25,27 @@ const BannerContent = styled.div`
 
 `
 
-export default  function Banner(){
+export interface BannerProps{
+   imageSrc?: string;
+   imagemAlt?: string;
+   title: string;
+   description?: string;
+   buttonLink?: string;
+   buttonText?: string;
+}
+
+const Banner: React.FC<BannerProps> = (props) =>{
     return(
      <BannerContent>
+        { props.imageSrc &&
         <BannerImg
-        src={Img}
-        alt= "imagem da home"
+        src= {props.imageSrc}
+        alt= {props.imagemAlt}
         />
-        <Messegen/>
+         }
+        <Messegen {...props}/>
      </BannerContent>
     );
 }
+
+export default Banner;

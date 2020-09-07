@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import {BsBook} from 'react-icons/bs';
 import './style.css'
+import {BannerProps} from '../Banner';
 
 export const MessageContainer = styled.div`
   width: 70%;
@@ -52,18 +53,28 @@ const Button = styled(Link)`
     }
 `  
 
-export default function Messegen(){
+const Messegen: React.FC<BannerProps> = (props) =>{
     return(
      <MessageContainer>
          <Title>
-             somos apaixonado por invocao e fazemos disso nosso trabalho
+            {props.title}
          </Title>
+
+         {props.description &&
          <Description>
-             Sabemos que o trabalho em grupo é algo essencial para qualquer time, e conosco nao seria diferente!
+            {props.description}
          </Description>
-         <Button to="/projetos">
-           <BsBook className="afasta"/> Projetos
+         }
+
+         { props.buttonLink &&
+         <Button to={props.buttonLink}>
+           <BsBook className="afasta"/> {props.buttonText}
          </Button>
+         }
+         
      </MessageContainer>
     );
 }
+
+
+export default Messegen;

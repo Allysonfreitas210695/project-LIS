@@ -15,7 +15,7 @@ const MenuContainer = styled.div`
     display: flex;
     flex: 1;
 
-
+    
     & ${MenuIcon} {
         position: fixed;
         right: 20px;
