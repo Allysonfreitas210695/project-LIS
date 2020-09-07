@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import Img from '../../../src/assets/images/Home/imagem.svg';
-import BannerImg from '../Header/BannerImg';
-import Messegen from '../Header/BannerMessege';
+import Img from '../../../assets/images/Home/imagem.svg';
+import BannerImg from '../BannerImg';
+import Messegen from '../BannerMessege';
+
 
 const BannerContent = styled.div`
    display: flex;
@@ -14,10 +15,10 @@ const BannerContent = styled.div`
 export default  function Banner(){
     return(
      <BannerContent>
-        <BannerImg 
+        <BannerImg
         src={Img}
         alt= "imagem da home"
-       />
+        />
         <Messegen/>
      </BannerContent>
     );
