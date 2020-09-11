@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import TopBar from '../TopBar';
-import Banner, {BannerProps} from '../Banner';
+import Banner, {BannerProps}  from '../Banner';
 
 const HeaderMain = styled.header`
 background-color: var( --color-primary);
