@@ -14,6 +14,10 @@ const FooterData = styled.div`
     padding: 10px 0px;
     font-family: 'Roboto', sans-serif;
     
+    @media(min-width: 768px){
+        text-align: left;
+        width: 30%;
+    }
 `
 
 const Content = styled.section`
@@ -23,10 +27,23 @@ const Content = styled.section`
     ${FooterData}{
         border-bottom: 1px solid var(--color-grey);
     }
+
+    @media(min-width: 768px){
+        width: 90%;
+        margin-top: 30px;
+
+        ${FooterData}{
+            border-bottom: none;
+
+        }
+    }
 `
 
 const Infor = styled.div`
-
+    @media(min-width: 768px){
+        display: flex;
+        justify-content: space-between;
+    }
 `
 
 const Title = styled.h1`
