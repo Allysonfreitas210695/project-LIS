@@ -2,6 +2,7 @@ import React from 'react';
 import PageTemplate from '../pageTemplate';
 import HomeImg from '../../assets/images/Home/imagem.svg'
 import Projetos from '../../components/projetos';
+import VideoDestaque from '../../components/VideoDestaque';
 
 export default function Home(){
     return (
@@ -13,6 +14,9 @@ export default function Home(){
        buttonText = "projetos"
       >
         <Projetos/>
+
+         <VideoDestaque/>
+         
       </PageTemplate>
     );
 }
